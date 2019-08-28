@@ -2,7 +2,9 @@ body {
     display: block;
 }
 .foto-home {
+    width: 200px;
     height: 200px;
+
     border-radius: 50%;
 }
 .saudacao p {
@@ -251,12 +253,7 @@ body {
     top: 0;
     right: 0;
 
-    line-height: 1;
 
-    -webkit-transform: translate(calc(.707 * (3.5em - 100%) + 100%), calc(-.707 * 3.5em)) rotate(45deg);
-            transform: translate(calc(.707 * (3.5em - 100%) + 100%), calc(-.707 * 3.5em)) rotate(45deg);
-    -webkit-transform-origin: 0 0;
-            transform-origin: 0 0;
 
     padding: 1em 3em;
     box-sizing: border-box;

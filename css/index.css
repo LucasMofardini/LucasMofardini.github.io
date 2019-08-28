@@ -1,3 +1,7 @@
+@font-face {
+  src: url(fontes/trav.ttf);
+  font-family: trav;
+}
 body {
     display: block;
 }
@@ -13,6 +17,7 @@ body {
   transform: scale(1.5);
   transition: 0.6s;
 } */
+
 .saudacao p {
     font-size: 1.5em;
     color: #99A;
@@ -168,7 +173,7 @@ body {
 }
 
  .palavra-home {
-    font-family: "Shadows Into Light", cursive;
+    /* font-family: trav, cursive; */
     font-weight: bold;
     font-size: 400%;
     color: green;

@@ -1,3 +1,8 @@
+@font-face {
+  font-family: trav;
+  src: url(trav.ttf);
+
+}
 body {
     display: block;
 }
@@ -158,8 +163,8 @@ body {
     left: 0;
 }
 .palavra-home {
-    font-family: "Shadows Into Light", cursive;
-    font-weight: bold;
+    font-family: trav;
+
     font-size: 400%;
     color: rgba(255, 127, 127, .5);
     position: absolute;
@@ -171,6 +176,7 @@ body {
     left: 60%;
     -webkit-transform: translate(-50%, -50%) translateZ(4px) rotate(-5deg) scale(.25);
             transform: translate(-50%, -50%) translateZ(4px) rotate(-5deg) scale(.25);
+
 }
 .boas-praticas {
     top: 70%;
@@ -268,7 +274,8 @@ body {
     border: .25em solid black;
 
     font-size: 1.2em;
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: trav;
+
     -webkit-animation: aparece .5s;
             animation: aparece .5s;
     -webkit-animation-delay: 2s;
@@ -295,6 +302,9 @@ body {
 .blog a:focus {
     background-color: #F2FFFC;
     color: #F26;
+}
+ .texto{
+  font-family: trav;
 }
 @-webkit-keyframes aparece {
     from {

@@ -55,7 +55,7 @@ header{
   background-color: black;
 
 }
-/* @-webkit-keyframes aparece {
+ @-webkit-keyframes aparece {
     from {
         opacity: 0;
         transform: scale(0.001);
@@ -69,4 +69,4 @@ header{
         transform: rotate(180deg);
 
     }
-} */
+} 

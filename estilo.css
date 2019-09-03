@@ -28,12 +28,16 @@ transition: transform 0.3s linear 0.1s;
 
 }
 .borda{
-/* border-bottom: 2px solid darkblue; */
+  /* border-bottom: 2px solid darkblue; */
 }
 body{
-  width: 100%;
-  height: 500px;
+   margin: 0 auto;
+
   background-color: lightpink;
+}
+.corpo{
+  width: 1024px;
+  height: 1000px;
 }
 .icons{
 float: right;
@@ -46,7 +50,17 @@ animation: aparece 2s;
   top: 0px;
   right: 0px;
 }
+footer{
+  position: fixed;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+ background-color: black;
+ color: white;
+ text-align: center;
+font-family: trav;
 
+}
 h2{
   text-transform: uppercase;
   font-size: 1.7em;

@@ -12,11 +12,24 @@ h1{
 
 
 }
+#palavra-resumo{
+ float: left;
+ margin-left: 2em;
+ color: black;
+ margin-top: 1.4em;
+}
+.resumo{
+
+}
+.texto-resumo{
+  width: 1000px;
+  text-align: center;
+}
 #foto-lucas{
   width:350px;
   height: 350px;
   border-radius: 50%;
-  text-align: center;
+
     animation: aparece-img 2s;
     margin-top: 10px;
 transition: transform 0.3s linear 0.1s;
@@ -33,15 +46,15 @@ transition: transform 0.3s linear 0.1s;
 body{
    margin: 0 auto;
 
-  background-color: lightpink;
+  /* background-color: lightpink; */
 }
 .corpo{
-  width: 1024px;
+
   height: 1000px;
 }
 .icons{
 float: right;
-  width: 50px;
+  width: 4s0px;
 animation: aparece 2s;
 
 }

@@ -24,8 +24,30 @@ h1{
  padding-right: 7px;
   padding-left: 20px;
 }
-#arrumar-texto-resumo{
+.texto-inf{
+  width: 950px;
+  text-align: justify;
+   position: absolute;
+  font-family: trav;
+  top: 70em;
+  font-size: 16px;
+  padding: 15px;
 
+  border: 1px solid black;
+  transition: transform 0.3s linear 0.1s;
+  animation: aparece 2s;
+  box-shadow: 4px 4px 18px 1px rgba(0,0,0,0.40);
+}
+#palavra-inf{
+  float: right;
+  /* margin-left: 2em; */
+  color: black;
+  margin-top: 10.4em;
+  font-size: 2.3em;
+
+  border-right: 1px solid black;
+  padding-right: 7px;
+   padding-left: 20px;
 }
 
 .texto-resumo{
@@ -36,10 +58,14 @@ h1{
   top: 43em;
   font-size: 16px;
   padding: 15px;
-background-color: lightgray;
+
   border: 1px solid black;
   transition: transform 0.3s linear 0.1s;
   animation: aparece 2s;
+  box-shadow: 4px 4px 18px 1px rgba(0,0,0,0.40);
+}
+.inf-basicas{
+
 }
 .texto-resumo:hover{
   transform: scale(1.02);
@@ -76,7 +102,7 @@ body{
 	width: 980px;
 
   height: 1000px;
-  /* background-color: pink; */
+   /* background-color: lightpink; */
 }
 .icons{
 float: right;
@@ -118,8 +144,10 @@ h2{
 header{
   width: 100%;
   height: 500px;
-  background-color: black;
-
+  background-image: url(https://i.pinimg.com/originals/88/15/63/881563d6444b370fa4ceea0c3183bb4c.gif);
+/* background-image: url(https://gifimage.net/wp-content/uploads/2017/11/gif-tecnologia-1.gif); */
+background-repeat: no-repeat;
+background-size: 100% auto;
 }
 
  @-webkit-keyframes aparece {
@@ -139,9 +167,14 @@ header{
 }
 
 
-@media screen and (max-width: 800px) {
-
-
-  }
-
+/* @media screen and (max-width: 800px) {
+.texto-resumo{
+  font-size: 2em;
 }
+
+  } */
+  @media only screen and (max-width: 800px) {
+    body {
+      background-color: lightblue;
+    }
+  }

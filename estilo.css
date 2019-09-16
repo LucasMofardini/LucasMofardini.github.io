@@ -5,6 +5,16 @@
 *{
   margin: 0;
 }
+body{
+  margin: 0;
+}
+.corpo{
+  margin:0 auto;
+ width: 80%;
+
+  height: 1000px;
+    background-color: lightpink;
+}
 header{
   width: 100%;
   height: 25em;
@@ -98,6 +108,11 @@ h2{
 
     background-repeat: no-repeat;
     background-size: 100% 100%;
+  }
+  .corpo{
+
+   width: 100%; 
+
   }
 }
 @-webkit-keyframes aparece {

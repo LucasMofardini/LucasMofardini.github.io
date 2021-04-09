@@ -20,12 +20,18 @@ function toggleinfo(){
     const produtos1 = document.querySelector('.produtos-info.info-1');
     const produtos2 = document.querySelector('.produtos-info.info-2');
     const produtosItem = document.querySelectorAll('.produtos-item');
-    produtosItem.forEach((produtoItem)=>{
-        produtoItem.addEventListener('click',()=>{
-            produtos1.classList.toggle('ativo');
-            produtos2.classList.toggle('ativo');
-        });
-    });
+    const imgInfo = document.querySelector('.img-info');
+    // produtosItem.forEach((produtoItem)=>{
+    //     produtoItem.addEventListener('click',()=>{
+    //         produtos1.classList.toggle('ativo');
+    //         produtos2.classList.toggle('ativo');
+    //     });
+    // });
+    
+             imgInfo.addEventListener('click',()=>{
+                produtos1.classList.toggle('ativo');
+                produtos2.classList.toggle('ativo');
+            });
    
 }
 toggleinfo();

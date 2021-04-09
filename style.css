@@ -194,7 +194,6 @@ img {
 
 .produtos h1 {
     font-size: 3em;
-    margin: 0 10px 60px 10px
 }
 
 .produtos-container {
@@ -218,7 +217,7 @@ img {
 }
 .produtos-info{
     position: absolute;
-    top: 30px;
+    top: 10px;
     max-width: 400px;
     background: var(--gray-color);
     padding: 30px 30px;
@@ -226,6 +225,17 @@ img {
     display: none;
     visibility: hidden;
     opacity: 0;
+}
+.div-titulo-produto{
+    display: flex;
+    align-items: center;
+    margin: 0 10px 60px 10px
+}
+.div-titulo-produto img{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    cursor: pointer;
 }
 .produtos-info h3{
     margin: 0;

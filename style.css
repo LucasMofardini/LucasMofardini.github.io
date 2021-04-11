@@ -206,7 +206,6 @@ img {
 .produtos-item {
     flex: 1 1 175px;
     margin: 10px;
-    cursor: pointer;
 }
 
 .produtos-item h2 {
@@ -225,6 +224,10 @@ img {
     display: none;
     visibility: hidden;
     opacity: 0;
+}
+.produtos-info a{
+    color:white;
+
 }
 .div-titulo-produto{
     display: flex;
@@ -264,6 +267,26 @@ img {
     border-top: 8px solid #3B8DC4;
 }
 
+.div-info-clicar{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+.div-info-clicar.ativo{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    animation-name: lado;
+    animation-duration: 1.0s;
+}
+@keyframes lado{
+    from{
+        transform: translate3d(500px,-40px,0);
+    }
+    to{
+        transform: translate3d(0,0,0);
+    }
+}
 
 /*Preço*/
 .preco{

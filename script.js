@@ -15,23 +15,34 @@ function scrollSuave() {
     });
 }
 scrollSuave();
-
-function toggleinfo(){
+function executaInfo(){
+    const divInfo = document.querySelector('.div-info-clicar');
     const produtos1 = document.querySelector('.produtos-info.info-1');
     const produtos2 = document.querySelector('.produtos-info.info-2');
-    const produtosItem = document.querySelectorAll('.produtos-item');
     const imgInfo = document.querySelector('.img-info');
-    // produtosItem.forEach((produtoItem)=>{
-    //     produtoItem.addEventListener('click',()=>{
-    //         produtos1.classList.toggle('ativo');
-    //         produtos2.classList.toggle('ativo');
-    //     });
-    // });
-    
-             imgInfo.addEventListener('click',()=>{
-                produtos1.classList.toggle('ativo');
-                produtos2.classList.toggle('ativo');
-            });
-   
+    function toggleinfo(){
+                imgInfo.addEventListener('click',()=>{
+                    produtos1.classList.toggle('ativo');
+                    produtos2.classList.toggle('ativo');
+                    divInfo.classList.remove('ativo');
+                });
+    }
+    toggleinfo();
+    function apareceMensagem(){
+        console.log(imgInfo);
+        imgInfo.addEventListener('mouseover',()=>{
+            if(produtos1.classList.contains('ativo') && produtos2.classList.contains('ativo')){
+                divInfo.classList.remove('ativo');
+                
+            }else{
+                divInfo.classList.toggle('ativo');
+
+            }
+        });
+    }
+    apareceMensagem();
+ 
+
+
 }
-toggleinfo();
+executaInfo();

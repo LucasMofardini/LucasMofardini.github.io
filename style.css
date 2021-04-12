@@ -141,7 +141,7 @@ img {
 /*Sobre*/
 
 .sobre {
-    border-bottom: 2px solid var(--gray-color);
+    border-bottom: 2px solid #222222;
     max-width: 960px;
     margin: 0 auto;
     padding: 60px 0;
@@ -294,7 +294,7 @@ img {
 .preco{
     max-width: 960px;
     padding-top: 30px;
-    border-top: 2px solid var(--gray-color);
+    border-top: 2px solid #222222;
     margin: 0 auto;
 }
 .preco h1{

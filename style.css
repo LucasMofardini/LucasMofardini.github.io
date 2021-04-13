@@ -705,7 +705,7 @@ background-color: rgba(0,0,0,0.2);
         font-size: 1.5em;
     }
     .preco-item ul img{
-        min-height: 150px;
+        max-height: 150px;       
         min-width: 100%;
     }
 }

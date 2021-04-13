@@ -51,19 +51,28 @@ function toggleBarras(){
     const imgMais = document.querySelector('.img-mais');
     const divInfo = document.querySelector('.qualidade-titulo .div-info-clicar');
     const qualidadeItem = document.querySelectorAll('.qualidade-item');
-    function apareceMensagem(){
-        imgMais.addEventListener('mouseover',()=>{
+    function toggleMais(){
+        imgMais.addEventListener('click',()=>{
             qualidadeItem.forEach((item)=>{
-                if(!!item.classList.contains('lista')){
-                    divInfo.classList.remove('ativo');
-                }else{
-                    divInfo.classList.toggle('ativo');
-                    
-                }
+                
+                item.classList.toggle('lista');
             });
-            divInfo.classList.toggle('ativo');
         });
     }
-    apareceMensagem();
+    toggleMais();
+    // function apareceMensagem(){
+    //     imgMais.addEventListener('mouseover',()=>{
+    //         qualidadeItem.forEach((item)=>{
+    //             if(!!item.classList.contains('lista')){
+    //                 divInfo.classList.remove('ativo');
+    //             }else{
+    //                 divInfo.classList.toggle('ativo');
+                    
+    //             }
+    //         });
+    //         divInfo.classList.toggle('ativo');
+    //     });
+    // }
+    // apareceMensagem();
 }
 toggleBarras();

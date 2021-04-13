@@ -16,7 +16,7 @@ function scrollSuave() {
 }
 scrollSuave();
 function executaInfo(){
-    const divInfo = document.querySelector('.div-info-clicar');
+    const divInfo = document.querySelector('.div-titulo-produto .div-info-clicar');
     const produtos1 = document.querySelector('.produtos-info.info-1');
     const produtos2 = document.querySelector('.produtos-info.info-2');
     const imgInfo = document.querySelector('.img-info');
@@ -46,3 +46,24 @@ function executaInfo(){
 
 }
 executaInfo();
+
+function toggleBarras(){
+    const imgMais = document.querySelector('.img-mais');
+    const divInfo = document.querySelector('.qualidade-titulo .div-info-clicar');
+    const qualidadeItem = document.querySelectorAll('.qualidade-item');
+    function apareceMensagem(){
+        imgMais.addEventListener('mouseover',()=>{
+            qualidadeItem.forEach((item)=>{
+                if(!!item.classList.contains('lista')){
+                    divInfo.classList.remove('ativo');
+                }else{
+                    divInfo.classList.toggle('ativo');
+                    
+                }
+            });
+            divInfo.classList.toggle('ativo');
+        });
+    }
+    apareceMensagem();
+}
+toggleBarras();

@@ -396,13 +396,26 @@ img {
     flex-wrap: wrap;
     justify-content: flex-start;
 }
+.qualidade-titulo{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.qualidade-titulo img{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
 .container-qualidade{
     max-width: 90%;
     margin: 0 auto;
 }
 .container-qualidade h1{
     font-size: 3em;
-    margin: 0 auto;
+
     padding: 20px 5px;
     justify-content: center;
     color: var(--white-color);
@@ -416,9 +429,24 @@ img {
     flex: 1 1 300px;
     margin: 20px 10px;
     max-width: 300px;
+    /* display:none; */
 
 }
-
+.qualidade-item.lista ul{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+.qualidade-item .container-barras{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+.qualidade-item.lista .container-barras{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
 .qualidade-item h2 {
     font-size: 2.25em;
     color: var(--white-color);
@@ -439,7 +467,6 @@ img {
 }
 
 
-
 .qualidade-item p, .qualidade-item ul li {
     font-size: 1.0em;
     line-height: 1.4;
@@ -447,15 +474,100 @@ img {
     text-transform: uppercase;
     /* border: 1px solid #7c7c7c; */
     margin: 5px 0;
-    
 
-
-    
 }
 .qualidade-item ul li:before{
     content:'➡';
     padding: 0 10px;
 }
+/* BARRAS */
+
+.container-barras h3{
+color: var(--white-color);
+}
+.container-barras .barra-1,.container-barras .barra-2{
+    width: 100%;
+    border: 1px solid var(--white-color);
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 4px 5px;
+    
+}
+
+.barra-1#htmlcss div{
+width: 90%;
+height: 100%;
+background-color: rgba(0,0,0,0.2);
+}
+.barra-2#htmlcss div{
+width: 85%;
+height: 100%;
+background-color: rgba(0,0,0,0.2);
+}
+.barra-1#js div{
+width: 90%;
+height: 100%;
+background-color: rgba(0,0,0,0.2);
+}
+.barra-2#js div{
+width: 60%;
+height: 100%;
+background-color: rgba(0,0,0,0.2);
+}
+.barra-1#git div{
+width: 95%;
+height: 100%;
+background-color: rgba(0,0,0,0.2);
+}
+.barra-2#git div{
+width: 850%;
+height: 100%;
+background-color: rgba(0,0,0,0.2);
+}
+.barra-1#php div{
+width: 95%;
+height: 100%;
+background-color: rgba(0,0,0,0.2);
+}
+.barra-2#php div{
+width: 850%;
+height: 100%;
+background-color: rgba(0,0,0,0.2);
+}
+.barra-1#studio div{
+width: 95%;
+height: 100%;
+background-color: rgba(0,0,0,0.2);
+}
+.barra-2#studio div{
+width: 850%;
+height: 100%;
+background-color: rgba(0,0,0,0.2);
+}
+.barra-1#term div{
+width: 95%;
+height: 100%;
+background-color: rgba(0,0,0,0.2);
+}
+.barra-2#term div{
+width: 850%;
+height: 100%;
+background-color: rgba(0,0,0,0.2);
+}
+.barra-1#java div{
+width: 95%;
+height: 100%;
+background-color: rgba(0,0,0,0.2);
+}
+.barra-2#java div{
+width: 850%;
+height: 100%;
+background-color: rgba(0,0,0,0.2);
+}
+
+
+
 /* NEWSLETTER */
 
 .newsletter {

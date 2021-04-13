@@ -394,7 +394,7 @@ img {
     margin-bottom: 60px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .container-qualidade{
     max-width: 90%;

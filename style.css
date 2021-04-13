@@ -466,7 +466,22 @@ img {
         opacity: 1;
     }
 }
-
+.class-flex{
+    display: flex;
+    flex-direction: column;
+}
+.container-barras > div{
+    display: flex;
+    flex-direction: column;
+}
+.class-flex.primeiro{
+order: -1;
+}
+#outros{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
 .qualidade-item h2 {
     font-size: 2.25em;
     color: var(--white-color);
@@ -500,6 +515,7 @@ img {
     content:'➡';
     padding: 0 10px;
 }
+
 /* BARRAS */
 
 .container-barras h3{
@@ -512,6 +528,7 @@ color: var(--white-color);
     display: flex;
     align-items: center;
     padding: 4px 5px;
+    animation: zerado ease-out 3s;
     
 }
 
@@ -519,6 +536,7 @@ color: var(--white-color);
 width: 90%;
 height: 100%;
 background-color: rgba(0,0,0,0.2);
+
 }
 .barra-2#htmlcss div{
 width: 85%;
@@ -584,6 +602,10 @@ background-color: rgba(0,0,0,0.2);
 width: 850%;
 height: 100%;
 background-color: rgba(0,0,0,0.2);
+}
+@keyframes zerado {
+	from{width: 0%;}
+		to{width: 100%;}
 }
 
 

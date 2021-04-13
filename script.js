@@ -51,11 +51,14 @@ function toggleBarras(){
     const imgMais = document.querySelector('.img-mais');
     const divInfo = document.querySelector('.qualidade-titulo .div-info-clicar');
     const qualidadeItem = document.querySelectorAll('.qualidade-item');
+    const outros = document.querySelector('#outros');
     function toggleMais(){
         imgMais.addEventListener('click',()=>{
             qualidadeItem.forEach((item)=>{
                 
                 item.classList.toggle('lista');
+             
+
             });
         });
     }

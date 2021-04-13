@@ -57,9 +57,10 @@ function toggleBarras(){
             qualidadeItem.forEach((item)=>{
                 
                 item.classList.toggle('lista');
-             
 
             });
+            outros.classList.toogle('ativo');
+
         });
     }
     toggleMais();

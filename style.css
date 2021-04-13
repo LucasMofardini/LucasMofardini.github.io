@@ -396,6 +396,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    min-height: 72vh;
 }
 .qualidade-titulo{
     display: flex;
@@ -412,7 +413,8 @@ img {
 
 .container-qualidade{
     max-width: 90%;
-    margin: 0 auto;
+    margin: 20px auto;
+
 }
 .container-qualidade h1{
     font-size: 3em;
@@ -477,10 +479,15 @@ img {
 .class-flex.primeiro{
 order: -1;
 }
-#outros{
+.outros{
     display: block;
     opacity: 1;
     visibility: visible;
+}
+.outros.lista{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
 }
 .qualidade-item h2 {
     font-size: 2.25em;

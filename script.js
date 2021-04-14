@@ -64,19 +64,11 @@ function toggleBarras(){
         });
     }
     toggleMais();
-    // function apareceMensagem(){
-    //     imgMais.addEventListener('mouseover',()=>{
-    //         qualidadeItem.forEach((item)=>{
-    //             if(!!item.classList.contains('lista')){
-    //                 divInfo.classList.remove('ativo');
-    //             }else{
-    //                 divInfo.classList.toggle('ativo');
-                    
-    //             }
-    //         });
-    //         divInfo.classList.toggle('ativo');
-    //     });
-    // }
-    // apareceMensagem();
+    function apareceMensagem(){
+        imgMais.addEventListener('mouseover',()=>{
+            divInfo.classList.toggle('ativo');
+        });
+    }
+    apareceMensagem();
 }
 toggleBarras();

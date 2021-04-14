@@ -734,3 +734,10 @@ background-color: rgba(0,0,0,0.2);
         order: -1;
     }
 }
+@media (max-width: 840px) {
+    .produtos-info{
+        display: none!important;
+        visibility: hidden;
+        opacity: 0;
+    }
+}

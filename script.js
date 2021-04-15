@@ -52,23 +52,27 @@ function toggleBarras(){
     const divInfo = document.querySelector('.qualidade-titulo .div-info-clicar');
     const qualidadeItem = document.querySelectorAll('.qualidade-item');
     const outros = document.querySelector('#outros');
+    const showBarras = document.querySelector('.qualidade-show-barras h3');
+    console.log(showBarras);
     function toggleMais(){
         imgMais.addEventListener('click',()=>{
             qualidadeItem.forEach((item)=>{
                 
                 item.classList.toggle('lista');
+                if(item.classList.contains('lista')){
+                    showBarras.innerHTML = 'Ver os cursos';
+                }else{
+                    showBarras.innerHTML = 'Ver em barras';
+
+                }
 
             });
+            
+
             outros.classList.toogle('ativo');
 
         });
     }
     toggleMais();
-    function apareceMensagem(){
-        imgMais.addEventListener('mouseover',()=>{
-            divInfo.classList.toggle('ativo');
-        });
-    }
-    apareceMensagem();
 }
 toggleBarras();

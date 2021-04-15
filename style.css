@@ -57,7 +57,11 @@ img {
     background: var(--gray-color);
     color: white;
 }
-
+/* .container-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 .superinfo {
     max-width: 960px;
     margin: 0 auto;

@@ -33,7 +33,7 @@ a {
 .container-header{
     max-width: 960px;
     margin: 0 auto;
-    border: 2px solid var(--color-main);
+    border: 2px solid var(--color-font);
     border-radius: 2px;
     padding: 20px 0;
 }
@@ -45,4 +45,89 @@ a {
     text-transform: uppercase;
     letter-spacing: 0.5rem;
     color: var(--color-font);
+}
+
+/* PROJECT MANAGER */
+.project-manager{
+    margin: 0 auto;
+    max-width: 960px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.project-manager img{
+    max-width: 250px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+.project-manager h2{
+    font-weight: 100;
+    letter-spacing: 0.5rem;
+    color: var(--color-font);
+    text-transform: uppercase;
+}
+
+/* CORPO */
+.corpo{
+    display: flex;
+    justify-content: center;
+    max-width: 1260px;
+    margin: 0 auto;
+    /* background: chartreuse; */
+    
+}
+.corpo > div:first-child{
+    border-right: 1px solid black;
+
+    text-align: right;
+}
+.corpo > div{
+    flex: 1;
+    padding: 0 20px;
+}
+.container-barras > div{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50px;
+    padding: 0 10px;
+
+}
+.container-barras .barra-1,.container-barras .barra-2{
+    width: 100%;
+    border: 1px solid var(--white-color);
+    height: 10px;
+    display: flex;
+    align-items: center;
+
+    animation: zerado ease-out 3s;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.1);
+}
+.container-todas-barras{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-barras{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+
+}
+.barra-1#studio div{
+    width: 75%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+    }
+    .barra-2#studio div{
+    width: 60%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+    }
+
+footer > div{
+    margin: 20px auto;
+    margin-top: 50px;
+    width: 960px;
+    display: flex;
+    justify-content: center;
 }
